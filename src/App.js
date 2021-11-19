@@ -43,18 +43,5 @@ class App extends Component {
   }
 };
 
-// const mapStateToProps = (state) => {
-//   return {
-//     todos: state.todos
-//   };
-// };
-
-// const mapDispatchToProps = dispatch => {
-//   return {
-//     addTodo: (todo) => {
-//       dispatch(addTodo(todo))
-//     }
-//   }
-// }
 
 export default connect(state => ({todos: state.todos}), { addTodo })(App);
